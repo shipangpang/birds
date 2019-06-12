@@ -17,3 +17,34 @@
 缺点:
 小,内容少,效果不如app好
 适合棋牌类,休闲类的游戏
+
+
+
+项目结构
+
+/---
+  |--index.html 页面,模拟手机的页面
+  |--game.js 小游戏的路口文件
+  |--game.json 小游戏的配置文件
+  |--project.config.json 项目配置文件(不需要修改)
+  |--main.js 游戏主类,用于初始化canvas以及一些全局对象
+  |--res/ 保存游戏资源图片的文件夹
+  |--audios/ 保存游戏的背景音乐
+  |--js/ 保存小游戏中各个js
+      |--director.js 导演,控制游戏逻辑,主流程
+      |--base/ 游戏过程中基本数据
+           |--Resources.js 资源类 获取游戏过程中需要的图片路径
+           |--ResourceLoader.js 资源加载器,保证游戏是在所有图片加载完成之后才开始主循环
+           |--DataStore.js  变量池,保存游戏过程中的数据以及数据的销毁
+           |--Sprite.js     精灵类,是所有图片类的父类
+      |--player/保存玩家相关的数据
+           |--Birds.js 小鸟
+           |--Score.js 分数
+           |--StartButton.js 开始按钮
+      |--runtime/ 游戏过程中的数据
+           |--Background.js 背景图
+           |--Land.js 地板
+           |--Pipe.js 水管的父类
+           |--UpPipe.js 上部水管
+           |--DownPipe.js 下部水管
+
