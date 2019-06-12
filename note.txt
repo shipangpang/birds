@@ -63,5 +63,23 @@
   export const Resources = [...];
 
 4.定义ResourceLoader.js
-export class ResourceLoader
-  
+export class ResourceLoader{}
+ 在构造中定义map集合,获取Resource中的数据
+ 遍历map,将其中的字符串全部替换为img对象
+ 定义onloaded方法,保证图片加载完成后再让Main来执行后续
+
+5.变量的存取与销毁
+定义DataStore.js
+暴露DataStore类
+定义构造方法
+定义静态方法,static getinstance(){}
+保证每个类获取到的变量池都是同一个变量池
+定义保存,获取,销毁数据的发放
+
+在Main中加载完成的方法前面获取变量池
+
+6.数据保存
+将部分数据永久保存在变量池中(该部分数据不随游戏的结束而销毁);
+
+
+
