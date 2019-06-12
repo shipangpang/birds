@@ -1,5 +1,6 @@
 import { ResourceLoader } from "./js/base/ResourceLoader.js";
 import { DataStore } from "./js/base/DataStore.js";
+import { Background } from "./js/runtime/Background.js";
 
 //程序主类
 export class Main{
@@ -29,5 +30,10 @@ export class Main{
             this.dataStore.canvas = this.canvas;
             this.dataStore.ctx = this.ctx;
             this.dataStore.res =map;
+            this.init();
+        }
+        //数据的初始化
+        init(){
+            new Background().draw();
         }
 }
