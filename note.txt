@@ -24,7 +24,7 @@
 
 /---
   |--index.html 页面,模拟手机的页面
-  |--game.js 小游戏的路口文件
+  |--game.js 小游戏的入口文件
   |--game.json 小游戏的配置文件
   |--project.config.json 项目配置文件(不需要修改)
   |--main.js 游戏主类,用于初始化canvas以及一些全局对象
@@ -48,3 +48,20 @@
            |--UpPipe.js 上部水管
            |--DownPipe.js 下部水管
 
+1.index.html
+定义canvas标签
+简单设置样式
+引入了game.js入口文件
+
+2.定义Main.jsexport class Main{}
+在其中定义构造方法constructor(){}
+在game.js中引入
+构造中获取canvas,模拟使用canvas画背景图
+
+3.定义Resources.js
+  定义资源数组,并将其导出
+  export const Resources = [...];
+
+4.定义ResourceLoader.js
+export class ResourceLoader
+  
