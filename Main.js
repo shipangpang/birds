@@ -4,6 +4,8 @@ import { Background } from "./js/runtime/Background.js";
 import { Director } from "./js/Director.js";
 import { Land } from "./js/runtime/Land.js";
 
+
+
 //程序主类
 export class Main{
     constructor(){
@@ -45,9 +47,12 @@ export class Main{
             //使用put保存的数据,在游戏结束时会全部销毁
             this.dataStore
                             .put('background',new Background())
-                            .put('land',new Land());
-
-            //导演发布指令
+                            .put('land',new Land())
+                            .put('pipes',[])
+                         
+           //创建水管
+           this.director.createPipes();
+            //导演发令执行
             this.director.run();
         }
 }

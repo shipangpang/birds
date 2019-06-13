@@ -20,9 +20,10 @@ export class Land extends Sprite{
             this.x =0;
         }
         //重写父类的draw方法
-        super.draw(this.img,this.srcX,this.srcY,this.srcW,
-            this.srcH,this.x,this.y,this.width,this.height);
-
+        // super.draw(this.img,this.srcX,this.srcY,this.srcW,
+        //     this.srcH,this.x,this.y,this.width,this.height);
+        //因为传入的参数和默认值一样,所以不传参数,使用默认值
+         super.draw();
 
     }
 
