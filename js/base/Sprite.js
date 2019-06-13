@@ -1,4 +1,4 @@
-import { DataStore } from "./DataStore.js";
+import { DataStore } from "./DataStore.js ";
 
 //所有图片的父类
 export class Sprite{

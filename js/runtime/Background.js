@@ -10,4 +10,4 @@ export class Background extends Sprite{
         const height = DataStore.getInstance().canvas.height;
         super(img,0,0,img.width,img.height,0,0,width,height);
     }
-}
+}                        

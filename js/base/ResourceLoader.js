@@ -27,6 +27,8 @@ export class ResourceLoader{
                //map.size指map集合的长度
                if(count>=this.map.size){
                 //所有图片加载成功
+                console.log(callback);
+                
                 callback(this.map);
                }
                 
