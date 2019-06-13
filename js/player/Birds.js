@@ -4,6 +4,6 @@ import { Sprite } from "../base/Sprite.js";
 export class Birds extends Sprite{
     constructor(){
         const img = Sprite.getImage('birds');
-        super (img,0,0,img.width,img.height,0,0,img.width,img.height);
+        super (img,0,0,img.width,img.height,0,200,img.width,img.height);
     }
 }
