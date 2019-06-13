@@ -3,6 +3,7 @@ import { DataStore } from "./js/base/DataStore.js";
 import { Background } from "./js/runtime/Background.js";
 import { Director } from "./js/Director.js";
 import { Land } from "./js/runtime/Land.js";
+import { Birds } from "./js/player/Birds.js";
 
 
 
@@ -49,6 +50,7 @@ export class Main{
                             .put('background',new Background())
                             .put('land',new Land())
                             .put('pipes',[])
+                            .put('birds',new Birds());
                          
            //创建水管
            this.director.createPipes();

@@ -14,8 +14,7 @@ export class UpPipe extends Pipe{
     draw(){
         //-this.srcH表示水管完全出界了,加上top表示伸出一点点
         this.y = -this.srcH+this.top;
-        // console.log(this.y,this.height);
-        
+        // console.log(this.y,this.height);  
         super.draw();
     }
 }
